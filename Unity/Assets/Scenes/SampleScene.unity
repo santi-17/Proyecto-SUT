@@ -582,12 +582,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 9357ca63e2b23b7478730e25208b214d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9357ca63e2b23b7478730e25208b214d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9357ca63e2b23b7478730e25208b214d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9357ca63e2b23b7478730e25208b214d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.0056448746
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9357ca63e2b23b7478730e25208b214d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.407
+      value: 3.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9357ca63e2b23b7478730e25208b214d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -732,8 +744,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7eab84433183e47aeed8b92c2e547a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  motorForce: 1500
-  breakForce: 3000
+  motorForce: 3000
+  breakForce: 5000
   maxSteerAngle: 30
   frontLeftWheelCollider: {fileID: 1050118881}
   frontRightWheelCollider: {fileID: 1081626438}
@@ -816,7 +828,7 @@ TerrainCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1842946312}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 973a061e3e12c4e418915d066c5057af, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -856,7 +868,7 @@ Terrain:
   m_StaticShadowCaster: 0
   m_IgnoreQualitySettings: 0
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
+  m_MaterialTemplate: {fileID: 2100000, guid: 255436391f9524147a37a599920b6a29, type: 2}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
