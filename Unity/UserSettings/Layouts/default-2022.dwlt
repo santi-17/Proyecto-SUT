@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 49
+  controlID: 39
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 18
+  controlID: 40
   draggingID: 0
 --- !u!114 &11
 MonoBehaviour:
@@ -395,31 +395,24 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scripts/Tractor
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
-  m_StartGridSize: 57
+  m_StartGridSize: 64
   m_LastFolders:
-  - Assets
-  m_LastFoldersGridSize: 57
+  - Assets/Scripts/Tractor
+  m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\santi\Desktop\RepoProyectoFinal\Proyecto-SUT\Unity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b85a0000
-    m_LastClickedID: 23224
-    m_ExpandedIDs: 00000000b85a000000ca9a3b
-=======
-    scrollPos: {x: 0, y: 26}
-    m_SelectedIDs: b85a0000
-    m_LastClickedID: 23224
-    m_ExpandedIDs: 00000000b85a0000305b0000385b000000ca9a3b
->>>>>>> 8cf2f64481680cac25b29081e13e072688c84365
+    m_SelectedIDs: f85d0000
+    m_LastClickedID: 24056
+    m_ExpandedIDs: 00000000725c0000e45c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -447,7 +440,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b85a0000
+    m_ExpandedIDs: 00000000725c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -500,7 +493,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 57
+    m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
 --- !u!114 &15
@@ -587,29 +580,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 24fbffff
-=======
-      m_SelectedIDs: 425a0000
-      m_LastClickedID: 23106
-      m_ExpandedIDs: 30fbffff
->>>>>>> 8cf2f64481680cac25b29081e13e072688c84365
+      m_ExpandedIDs: 3637ffff9037ffff1039ffff2a90ffff4291ffffbea6fffffec6ffff64f6ffffec5b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: GearText
+        m_OriginalName: GearText
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -23994
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -962,9 +949,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.05080366, y: 7.6221275, z: -6.440645}
+    m_Target: {x: 0.05080366, y: 10.915129, z: -6.440645}
     speed: 2
-    m_Value: {x: 0.05080366, y: 7.6221275, z: -6.440645}
+    m_Value: {x: 0.05080366, y: 10.915129, z: -6.440645}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1010,17 +997,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.058590923, y: -0.6402002, z: 0.04907106, w: -0.7643987}
+    m_Target: {x: -0.033285994, y: -0.032379292, z: 0.0010791108, w: -0.99892145}
     speed: 2
-    m_Value: {x: 0.058590923, y: 0.6402002, z: -0.04907106, w: 0.7643987}
+    m_Value: {x: -0.033285968, y: -0.032379266, z: 0.0010791098, w: -0.9989206}
   m_Size:
-    m_Target: 26.294277
+    m_Target: 71.210945
     speed: 2
-    m_Value: 26.294277
+    m_Value: 68.14445
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 0.94053
     m_SpeedNormalized: 0.47
