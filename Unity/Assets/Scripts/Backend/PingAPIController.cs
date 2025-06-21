@@ -8,17 +8,20 @@ using System;
 
 public class PingAPIController : MonoBehaviour
 {
-    public string apiUrl = "https://proyecto-sut.onrender.com/ping"; // URL de la API a la que se enviará la solicitud
+    
     public TextMeshPro responseText; // Referencia al componente TextMeshProUGUI para mostrar la respuesta
 
     // Start is called before the first frame update
     void Start()
     {
+
+        //StartCoroutine(TestConnection()); // Iniciar la prueba de conexión al inicio
         StartCoroutine(GetPing());
     }
 
-    private IEnumerator GetPing()
+    IEnumerator GetPing()
     {
+        string apiUrl = "https://proyecto-sut.onrender.com/ping"; // URL de la API a la que se enviará la solicitud
         using (UnityWebRequest webRequest = UnityWebRequest.Get(apiUrl))
         {
             // Enviar la solicitud y esperar la respuesta
@@ -38,6 +41,26 @@ public class PingAPIController : MonoBehaviour
             }
         }
     }
+
+    //IEnumerator TestConnection()
+    //{
+    //    string url = "https://proyecto-sut.onrender.com/ping";
+
+    //    using (UnityWebRequest www = UnityWebRequest.Get(url))
+    //    {
+    //        yield return www.SendWebRequest();
+
+    //        if (www.result != UnityWebRequest.Result.Success)
+    //        {
+    //            Debug.LogError("Error: " + www.error);
+    //        }
+    //        else
+    //        {
+    //            Debug.Log("OK - Connected to backend");
+    //        }
+    //    }
+    //}
+
 
     // Update is called once per frame
     void Update()
