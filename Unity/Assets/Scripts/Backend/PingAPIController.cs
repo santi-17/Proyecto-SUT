@@ -8,7 +8,7 @@ using System;
 
 public class PingAPIController : MonoBehaviour
 {
-    public string apiUrl = "https://localhost:7254/Ping"; // URL de la API a la que se enviará la solicitud
+    public string apiUrl = "https://proyecto-sut.onrender.com/ping"; // URL de la API a la que se enviará la solicitud
     public TextMeshPro responseText; // Referencia al componente TextMeshProUGUI para mostrar la respuesta
 
     // Start is called before the first frame update
