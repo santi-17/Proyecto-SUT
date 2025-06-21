@@ -18,12 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -32,10 +28,9 @@
               "RelativeDocumentMoniker": "APIRESTUnityWeb\\PingController.cs",
               "ToolTip": "C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Backend\\APIRESTUnityWeb\\APIRESTUnityWeb\\PingController.cs",
               "RelativeToolTip": "APIRESTUnityWeb\\PingController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T20:28:49.808Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T20:28:49.808Z"
             },
             {
               "$type": "Document",
@@ -45,10 +40,14 @@
               "RelativeDocumentMoniker": "APIRESTUnityWeb\\Program.cs",
               "ToolTip": "C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Backend\\APIRESTUnityWeb\\APIRESTUnityWeb\\Program.cs",
               "RelativeToolTip": "APIRESTUnityWeb\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T19:46:51.314Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
