@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Tractor\Transmision.cs" />
     <Compile Include="Assets\Scripts\Backend\TractorAPIController.cs" />
     <Compile Include="Assets\Scripts\Tractor\TractorControler.cs" />
+    <Compile Include="Assets\Scripts\UI\HUDController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -341,6 +341,7 @@
 "Assets/Scripts/Tractor/TractorSuspencion.cs"
 "Assets/Scripts/Tractor/Transmision.cs"
 "Assets/Scripts/Tractor/TransmissionSelector.cs"
+"Assets/Scripts/UI/HUDController.cs"
 "Assets/Scripts/UI/TransmissionUI.cs"
 -langversion:9.0
 /deterministic
