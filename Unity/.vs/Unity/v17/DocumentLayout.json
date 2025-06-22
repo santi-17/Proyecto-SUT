@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Unity\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|c:\\users\\santi\\desktop\\repoproyectofinal\\proyecto-sut\\unity\\assets\\scripts\\tractor\\acoplador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tractor\\acoplador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|c:\\users\\santi\\desktop\\repoproyectofinal\\proyecto-sut\\unity\\assets\\scripts\\implementos\\implemento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\implementos\\implemento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Unity\\assets\\scripts\\tractor\\tractorcontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tractor\\tractorcontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,11 +27,11 @@
       "RelativeMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tractor\\transmissionselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|c:\\users\\santi\\desktop\\repoproyectofinal\\proyecto-sut\\unity\\assets\\scripts\\ui\\hudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Unity\\assets\\scripts\\ui\\hudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\hudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|c:\\users\\santi\\desktop\\repoproyectofinal\\proyecto-sut\\unity\\assets\\scripts\\backend\\pingapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Unity\\assets\\scripts\\backend\\pingapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\backend\\pingapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -38,19 +46,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HUDController.cs",
-              "DocumentMoniker": "C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Unity\\Assets\\Scripts\\UI\\HUDController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\HUDController.cs",
-              "ToolTip": "C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Unity\\Assets\\Scripts\\UI\\HUDController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\HUDController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB4AAABUAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Acoplador.cs",
+              "DocumentMoniker": "C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Unity\\Assets\\Scripts\\Tractor\\Acoplador.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Tractor\\Acoplador.cs",
+              "ToolTip": "C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Unity\\Assets\\Scripts\\Tractor\\Acoplador.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Tractor\\Acoplador.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAwDMAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T05:28:40.56Z",
+              "WhenOpened": "2025-06-22T21:37:48.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Implemento.cs",
+              "DocumentMoniker": "C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Unity\\Assets\\Scripts\\Implementos\\Implemento.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Implementos\\Implemento.cs",
+              "ToolTip": "C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Unity\\Assets\\Scripts\\Implementos\\Implemento.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Implementos\\Implemento.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwAoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T21:25:21.798Z",
               "EditorCaption": ""
             },
             {
@@ -59,7 +80,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
+              "Title": "HUDController.cs",
+              "DocumentMoniker": "C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Unity\\Assets\\Scripts\\UI\\HUDController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\HUDController.cs",
+              "ToolTip": "C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Unity\\Assets\\Scripts\\UI\\HUDController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\HUDController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB4AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T05:28:40.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "PingAPIController.cs",
               "DocumentMoniker": "C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Unity\\Assets\\Scripts\\Backend\\PingAPIController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Backend\\PingAPIController.cs",
@@ -67,12 +100,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Backend\\PingAPIController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAuwBEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T20:59:10.627Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T20:59:10.627Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "TransmissionSelector.cs",
               "DocumentMoniker": "C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Unity\\Assets\\Scripts\\Tractor\\TransmissionSelector.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tractor\\TransmissionSelector.cs",
@@ -80,12 +112,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Tractor\\TransmissionSelector.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T20:42:18.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-15T20:42:18.479Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "TransmissionUI.cs",
               "DocumentMoniker": "C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Unity\\Assets\\Scripts\\UI\\TransmissionUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\TransmissionUI.cs",
@@ -93,12 +124,11 @@
               "RelativeToolTip": "Assets\\Scripts\\UI\\TransmissionUI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T20:34:07.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-15T20:34:07.116Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TractorControler.cs",
               "DocumentMoniker": "C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Unity\\Assets\\Scripts\\Tractor\\TractorControler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tractor\\TractorControler.cs",
@@ -106,12 +136,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Tractor\\TractorControler.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAIwEEAAABxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T19:38:11.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-15T19:38:11.088Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Transmision.cs",
               "DocumentMoniker": "C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Unity\\Assets\\Scripts\\Tractor\\Transmision.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tractor\\Transmision.cs",
@@ -119,12 +148,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Tractor\\Transmision.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAABkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T19:17:10.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-15T19:17:10.845Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "TractorSuspencion.cs",
               "DocumentMoniker": "C:\\Users\\santi\\Desktop\\RepoProyectoFinal\\Proyecto-SUT\\Unity\\Assets\\Scripts\\Tractor\\TractorSuspencion.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tractor\\TractorSuspencion.cs",
