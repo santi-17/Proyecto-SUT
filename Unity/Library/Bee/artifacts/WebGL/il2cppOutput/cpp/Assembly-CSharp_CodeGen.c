@@ -12,6 +12,17 @@
 
 
 
+extern void PingAPIController_Start_m00C45D5278EA11006E6D8D5650FF70AFD4037DC2 (void);
+extern void PingAPIController_GetPing_mAA30107B2F4B75F280EFFFC7724E106131D7CA69 (void);
+extern void PingAPIController_Update_m33DC2BC42AA8A094CF957D8154DE4AB8A370D1AD (void);
+extern void PingAPIController__ctor_mC9F24A3749FDEB418346D3D6005864D7C03EF736 (void);
+extern void U3CGetPingU3Ed__2__ctor_m9DA14F3F2144F2ADF8E632FC37082E29ABC94206 (void);
+extern void U3CGetPingU3Ed__2_System_IDisposable_Dispose_m83F01F5B6B5AD06CE21197B7FF36FB338CDD4B70 (void);
+extern void U3CGetPingU3Ed__2_MoveNext_m17378D196F9310A28F4333ED919FD89335AB87FA (void);
+extern void U3CGetPingU3Ed__2_U3CU3Em__Finally1_mADA4277BB9FFDED6F626359723A21BDA499F970E (void);
+extern void U3CGetPingU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2889495A3F2F274066213051D6E01E28242A446F (void);
+extern void U3CGetPingU3Ed__2_System_Collections_IEnumerator_Reset_mD74CA1B0BE8E7E406CC924CCA4C9F82270701BFE (void);
+extern void U3CGetPingU3Ed__2_System_Collections_IEnumerator_get_Current_mE074CD272CDA491413B05AB2269E8237CB2AA7AD (void);
 extern void TractorAPIController_Start_m18F6213F45EFB312561E6B98A3ADEE1FD76F35E9 (void);
 extern void TractorAPIController_Update_mBDCEE858138E25A749FAB19A70A5DF3983D1293C (void);
 extern void TractorAPIController__ctor_m18214CD85DF7BD8898E5F1D5EC9CE215D82DD79B (void);
@@ -46,8 +57,19 @@ extern void TransmissionUI_Update_m10C5B04143C9CACC62B4665985755AF8AE97CF20 (voi
 extern void TransmissionUI__ctor_m14B866485FE9AB715481B0871E18BCFB6CE8DBB8 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[34] = 
+static Il2CppMethodPointer s_methodPointers[45] = 
 {
+	PingAPIController_Start_m00C45D5278EA11006E6D8D5650FF70AFD4037DC2,
+	PingAPIController_GetPing_mAA30107B2F4B75F280EFFFC7724E106131D7CA69,
+	PingAPIController_Update_m33DC2BC42AA8A094CF957D8154DE4AB8A370D1AD,
+	PingAPIController__ctor_mC9F24A3749FDEB418346D3D6005864D7C03EF736,
+	U3CGetPingU3Ed__2__ctor_m9DA14F3F2144F2ADF8E632FC37082E29ABC94206,
+	U3CGetPingU3Ed__2_System_IDisposable_Dispose_m83F01F5B6B5AD06CE21197B7FF36FB338CDD4B70,
+	U3CGetPingU3Ed__2_MoveNext_m17378D196F9310A28F4333ED919FD89335AB87FA,
+	U3CGetPingU3Ed__2_U3CU3Em__Finally1_mADA4277BB9FFDED6F626359723A21BDA499F970E,
+	U3CGetPingU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2889495A3F2F274066213051D6E01E28242A446F,
+	U3CGetPingU3Ed__2_System_Collections_IEnumerator_Reset_mD74CA1B0BE8E7E406CC924CCA4C9F82270701BFE,
+	U3CGetPingU3Ed__2_System_Collections_IEnumerator_get_Current_mE074CD272CDA491413B05AB2269E8237CB2AA7AD,
 	TractorAPIController_Start_m18F6213F45EFB312561E6B98A3ADEE1FD76F35E9,
 	TractorAPIController_Update_mBDCEE858138E25A749FAB19A70A5DF3983D1293C,
 	TractorAPIController__ctor_m18214CD85DF7BD8898E5F1D5EC9CE215D82DD79B,
@@ -83,48 +105,59 @@ static Il2CppMethodPointer s_methodPointers[34] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[34] = 
+static const int32_t s_InvokerIndices[45] = 
 {
-	4475,
-	4475,
-	4475,
-	4475,
-	4475,
-	4475,
-	4475,
-	4475,
-	4475,
-	4475,
-	4475,
+	4476,
+	4377,
+	4476,
+	4476,
+	3577,
+	4476,
+	4301,
+	4476,
+	4377,
+	4476,
+	4377,
+	4476,
+	4476,
+	4476,
+	4476,
+	4476,
+	4476,
+	4476,
+	4476,
+	4476,
+	4476,
+	4476,
 	1935,
-	4475,
-	4475,
-	4475,
-	4475,
+	4476,
+	4476,
+	4476,
+	4476,
 	1969,
 	3165,
-	4475,
-	4475,
-	4475,
+	4476,
+	4476,
+	4476,
 	3634,
-	4475,
-	4414,
-	4348,
-	4475,
-	4475,
-	4475,
-	4475,
-	4475,
-	4475,
-	4475,
-	6416,
-	4475,
+	4476,
+	4415,
+	4349,
+	4476,
+	4476,
+	4476,
+	4476,
+	4476,
+	4476,
+	4476,
+	6422,
+	4476,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	34,
+	45,
 	s_methodPointers,
 	0,
 	NULL,

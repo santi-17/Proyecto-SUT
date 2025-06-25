@@ -27,6 +27,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_RuntimeInitializeOnLoadManagerInitializer();
 	RegisterModule_RuntimeInitializeOnLoadManagerInitializer();
 
+	void RegisterModule_TLS();
+	RegisterModule_TLS();
+
 	void RegisterModule_Terrain();
 	RegisterModule_Terrain();
 
@@ -47,6 +50,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 
 	void RegisterModule_UIElements();
 	RegisterModule_UIElements();
+
+	void RegisterModule_UnityWebRequest();
+	RegisterModule_UnityWebRequest();
 
 	void RegisterModule_Vehicles();
 	RegisterModule_Vehicles();

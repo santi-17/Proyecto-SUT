@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - PingAPIController
     - TractorControler
     - Transmision
     - TransmissionSelector
@@ -22,6 +23,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshPro
     - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -110,35 +112,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1574}
+      Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 2162}
+      Script: {instanceID: 2188}
     - Class: 114
-      Script: {instanceID: 2582}
+      Script: {instanceID: 2608}
     - Class: 114
-      Script: {instanceID: 2656}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 2788}
+      Script: {instanceID: 2814}
     - Class: 114
-      Script: {instanceID: 3092}
+      Script: {instanceID: 3118}
     - Class: 114
-      Script: {instanceID: 4068}
+      Script: {instanceID: 3284}
     - Class: 114
-      Script: {instanceID: 4330}
+      Script: {instanceID: 3538}
     - Class: 114
-      Script: {instanceID: 5026}
+      Script: {instanceID: 4098}
     - Class: 114
-      Script: {instanceID: 5586}
+      Script: {instanceID: 4360}
     - Class: 114
-      Script: {instanceID: 5744}
+      Script: {instanceID: 5056}
     - Class: 114
-      Script: {instanceID: 6074}
+      Script: {instanceID: 5614}
     - Class: 114
-      Script: {instanceID: 24076}
+      Script: {instanceID: 5618}
     - Class: 114
-      Script: {instanceID: 25954}
+      Script: {instanceID: 5776}
     - Class: 114
-      Script: {instanceID: 26220}
+      Script: {instanceID: 6106}
+    - Class: 114
+      Script: {instanceID: 7078}
+    - Class: 114
+      Script: {instanceID: 7250}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -420,6 +426,12 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
+      Hash: fd3c9acc961a7fab8970927cc3f6999e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Transmision
+  - hash:
+      serializedVersion: 2
       Hash: c6369b4cc3be620d6c9300e920bc3d52
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -478,6 +490,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Flow
     namespaceName: Unity.VisualScripting
     className: ScriptGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 5c51baf04ddac4d31ff9c495836cb316
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TractorAPIController
   - hash:
       serializedVersion: 2
       Hash: fb79e95da8891fc7ac6c36ca6967af23
@@ -720,6 +738,12 @@ ScriptsOnlyBuild:
     className: StateGraphAsset
   - hash:
       serializedVersion: 2
+      Hash: 4b36f4bd9abe19aa5c4268dd79c58d12
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PingAPIController
+  - hash:
+      serializedVersion: 2
       Hash: 540882762544409cc4530e60db00e951
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -912,6 +936,12 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
+      Hash: c4cddd964c33c0f6f6e6766bb499555e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TransmissionSelector
+  - hash:
+      serializedVersion: 2
       Hash: d0392b7f3f52d5af537ade186b4f51f1
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -922,6 +952,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: 987d2cc842a8c8595343c87f5c037dbd
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TransmissionUI
   - hash:
       serializedVersion: 2
       Hash: 9a174471d4db2c0c6d3ac47d2f818db1
@@ -960,6 +996,12 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 6fbd111d8d6e6fc32460b487a29e73aa
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TractorSuspencion
+  - hash:
+      serializedVersion: 2
       Hash: ff76cf6cf52b4db7b95af6ffadca9288
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -994,37 +1036,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 6fbd111d8d6e6fc32460b487a29e73aa
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: TractorSuspencion
-  - hash:
-      serializedVersion: 2
-      Hash: fd3c9acc961a7fab8970927cc3f6999e
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Transmision
-  - hash:
-      serializedVersion: 2
-      Hash: 5c51baf04ddac4d31ff9c495836cb316
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: TractorAPIController
-  - hash:
-      serializedVersion: 2
-      Hash: 987d2cc842a8c8595343c87f5c037dbd
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: TransmissionUI
-  - hash:
-      serializedVersion: 2
-      Hash: c4cddd964c33c0f6f6e6766bb499555e
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: TransmissionSelector
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/santi/Desktop/RepoProyectoFinal/Proyecto-SUT/Unity/WebGL Builds/Build
+  playerPath: C:/Users/santi/Desktop/RepoProyectoFinal/Proyecto-SUT/Unity/WebGL Builds
