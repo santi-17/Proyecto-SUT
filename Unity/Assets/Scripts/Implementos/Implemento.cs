@@ -18,11 +18,13 @@ public class Implemento : MonoBehaviour
 
     public void Acoplar(Transform puntoAcopleTractor)
     {
+        Debug.Log("Se ejecutó el método Acoplar");
         // Asigna el punto de acople del tractor al implemento
         puntoAcople = puntoAcopleTractor;
         transform.SetParent(puntoAcople); // Establece el implemento como hijo del punto de acople
         transform.localPosition = Vector3.zero; // Resetea la posición local para que esté en el mismo lugar que el punto de acople
         transform.localRotation = Quaternion.identity; // Resetea la rotación local
+        rb.isKinematic = true; // Asegura que el Rigidbody sea cinemático para que no se vea afectado por la física mientras está acoplado
         esActivo = true; // Marca el implemento como activo
     }
 
