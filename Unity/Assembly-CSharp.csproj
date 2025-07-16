@@ -65,10 +65,12 @@
     <Compile Include="Assets\Scripts\Tractor\TransmissionSelector.cs" />
     <Compile Include="Assets\Scripts\UI\TransmissionUI.cs" />
     <Compile Include="Assets\Scripts\Tractor\TractorSuspencion.cs" />
+    <Compile Include="Assets\Scripts\Implementos\AradoDisco.cs" />
     <Compile Include="Assets\Scripts\Backend\PingAPIController.cs" />
     <Compile Include="Assets\Scripts\Implementos\Arado.cs" />
     <Compile Include="Assets\Scripts\Tractor\Transmision.cs" />
     <Compile Include="Assets\Scripts\Backend\TractorAPIController.cs" />
+    <Compile Include="Assets\Scripts\UI\CameraController.cs" />
     <Compile Include="Assets\Scripts\Tractor\TractorControler.cs" />
     <Compile Include="Assets\Scripts\UI\HUDController.cs" />
     <Compile Include="Assets\Scripts\Tractor\ImplementAttachment.cs" />

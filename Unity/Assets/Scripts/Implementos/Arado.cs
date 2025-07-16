@@ -7,16 +7,39 @@ public class Arado : MonoBehaviour
 
     public KeyCode activarArado = KeyCode.F; // Tecla para activar el arado
     [SerializeField] private Transform puntoRaycast;
+    [SerializeField] private Terrain terrain;
+
     public float distanciaDeteccion = 5f; // Distancia de detección del arado
-    public LayerMask capaSuelo; // Capa del suelo para detectar colisiones
+    public LayerMask Suelo; // Capa del suelo para detectar colisiones
     public int materialAradoIndex = 1; // Índice del material del arado en el array de materiales
+
+    public float profundidadSurco = 0.05f; // Profundidad del arado en el terreno
+    public int size = 1; // Tamaño del área afectada por el arado
 
     bool aradoActivo = false; // Estado del arado
 
     // Start is called before the first frame update
     void Start()
     {
-            
+        profundidadSurco = 0.05f;
+        //Terrain terrain = GetComponent<Terrain>();
+        if (terrain != null)
+        {
+            TerrainData data = terrain.terrainData;
+
+            float[,] alturas = data.GetHeights(0, 0, data.heightmapResolution, data.heightmapResolution);
+            for (int x = 0; x < data.heightmapResolution; x++)
+            {
+                for (int z = 0; z < data.heightmapResolution; z++)
+                {
+                    alturas[z, x] = 0.5f; // mitad de la altura máxima
+                }
+            }
+
+            data.SetHeights(0, 0, alturas);
+            terrain.Flush();
+            Debug.Log("Terreno elevado a 0.5f");
+        }
     }
 
     // Update is called once per frame
@@ -31,9 +54,11 @@ public class Arado : MonoBehaviour
 
         if(!aradoActivo) return; // Si el arado no está activo, salir del método
 
-        if (Physics.Raycast(puntoRaycast.position, Vector3.down, out RaycastHit hit, distanciaDeteccion, capaSuelo))
+        if (Physics.Raycast(puntoRaycast.position, Vector3.down, out RaycastHit hit, distanciaDeteccion))
         {
-            Terrain terrain = hit.collider.GetComponent<Terrain>();
+            Debug.DrawRay(puntoRaycast.position, Vector3.down * distanciaDeteccion, Color.red);
+
+            //Terrain terrain = hit.collider.GetComponent<Terrain>();
             if (terrain != null)
             {
                 // Si el rayo detecta un terreno, activar el arado
@@ -41,15 +66,27 @@ public class Arado : MonoBehaviour
                 // Aquí puedes agregar la lógica para arar el terreno, como cambiar su textura o estado
                 Vector3 terrainPos = hit.point - terrain.transform.position;
                 TerrainData data = terrain.terrainData;
+                float profundidadEnMetros = 0.05f; // esto es lo que vos querés, por ejemplo 1 metro
+                float alturaMaxima = data.size.y;
+                float profundidadSurco = profundidadEnMetros / alturaMaxima;
 
-                int mapX = (int)((terrainPos.x / data.size.x) * data.alphamapWidth);
-                int mapZ = (int)((terrainPos.z / data.size.z) * data.alphamapHeight);
+                int heightmapX = (int)((terrainPos.x / data.size.x) * data.heightmapResolution);
+                int heightmapZ = (int)((terrainPos.z / data.size.z) * data.heightmapResolution);
 
-                int size = 5; // tamaño del área pintada
-                int startX = Mathf.Clamp(mapX - size / 2, 0, data.alphamapWidth - 1);
-                int startZ = Mathf.Clamp(mapZ - size / 2, 0, data.alphamapHeight - 1);
+                //int size = 5; // tamaño del área pintada
+                // Asegurarse de que el área afectada no se salga de los límites del heightmap
+                int startX = Mathf.Clamp(heightmapX - size / 2, 0, data.heightmapResolution - 1);
+                int startZ = Mathf.Clamp(heightmapZ - size / 2, 0, data.heightmapResolution - 1);
 
-                float[,,] splatmap = data.GetAlphamaps(startX, startZ, size, size);
+                //pinto la textura del terreno
+
+                int alphamapX = (int)((terrainPos.x / data.size.x) * data.alphamapWidth);
+                int alphamapZ = (int)((terrainPos.z / data.size.z) * data.alphamapHeight);
+
+                int startAlphaX = Mathf.Clamp(alphamapX - size / 2, 0, data.alphamapWidth - 1);
+                int startAlphaZ = Mathf.Clamp(alphamapZ - size / 2, 0, data.alphamapHeight - 1);
+
+                float[,,] splatmap = data.GetAlphamaps(startAlphaX, startAlphaZ, size, size);
 
                 for (int x = 0; x < size; x++)
                 {
@@ -64,7 +101,32 @@ public class Arado : MonoBehaviour
 
                 //splatmap[0, 0, materialAradoIndex] = 1;
 
-                data.SetAlphamaps(startX, startZ, splatmap);
+                data.SetAlphamaps(startAlphaX, startAlphaZ, splatmap);
+
+                //2. deformar el terreno (heigthmap)
+                float[,] heights = data.GetHeights(startX, startZ, size, size);
+
+                for (int x = 0; x < size; x++)
+                {
+                    for (int z = 0; z < size; z++)
+                    {
+                        float valorAntes = heights[z, x];
+                        //heights[z, x] -= profundidadSurco;
+                        heights[z, x] -= profundidadSurco * (x / (float)size);
+                        Debug.Log($"Altura antes: {valorAntes}, después: {heights[z, x]}");
+                        Debug.Log($"Modificando altura en ({z},{x}) de {heights[z, x] + profundidadSurco} a {heights[z, x]}");
+
+                        //heights[z, x] -= profundidadSurco; // Reducir la altura del terreno
+                        heights[z, x] = Mathf.Clamp01(heights[z, x]); // Asegurarse de que la altura no se salga de los límites
+                    }
+                }
+
+                data.SetHeights(startX, startZ, heights);
+
+                terrain.Flush();
+
+                Debug.Log("Terreno arado en: " + hit.point + " con profundidad: " + profundidadSurco);
+
             }
             else
             {
