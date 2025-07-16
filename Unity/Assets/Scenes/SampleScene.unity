@@ -578,6 +578,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cultivator
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b3f5bb62d7f3b2943b04d5adcc2b1bc2, type: 3}
+      propertyPath: m_TagString
+      value: Implement
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: b3f5bb62d7f3b2943b04d5adcc2b1bc2, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -739,6 +743,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e3772d59fd0d4d48883f74f8a0a1182, type: 3}
+      propertyPath: m_TagString
+      value: Implement
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 1e3772d59fd0d4d48883f74f8a0a1182, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.30213118
@@ -867,9 +875,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362924495}
   serializedVersion: 4
-  m_Mass: 1000
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 500
+  m_Drag: 0.1
+  m_AngularDrag: 0.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2279,7 +2287,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1558798674}
   - component: {fileID: 1558798675}
-  - component: {fileID: 1558798676}
   m_Layer: 0
   m_Name: Acople
   m_TagString: Untagged
@@ -2323,20 +2330,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 75.87124, y: 31.34327, z: 28.49964}
   m_Center: {x: -0.25238037, y: 7.2675133, z: 0.95432997}
---- !u!114 &1558798676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558798673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f33bb6bae076874182ab5db977cfaf2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  teclaAcoplar: 101
-  teclaDesacoplar: 113
 --- !u!1 &1609974246
 GameObject:
   m_ObjectHideFlags: 0
@@ -2637,7 +2630,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   materialAradoIndex: 1
-  profundidadSurco: 0.03
+  profundidadSurco: 0.01
   size: 3
 --- !u!114 &1805099010
 MonoBehaviour:
@@ -2661,9 +2654,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805099007}
   serializedVersion: 4
-  m_Mass: 1000
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 500
+  m_Drag: 0.1
+  m_AngularDrag: 0.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2837,6 +2830,9 @@ PrefabInstance:
       addedObject: {fileID: 1836215422}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9357ca63e2b23b7478730e25208b214d, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1836215427}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9357ca63e2b23b7478730e25208b214d, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1836215426}
   m_SourcePrefab: {fileID: 100100000, guid: 9357ca63e2b23b7478730e25208b214d, type: 3}
 --- !u!1 &1836215415 stripped
@@ -2914,9 +2910,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1836215426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2977,6 +2973,22 @@ MonoBehaviour:
   frontRightWheelTransform: {fileID: 1836215418}
   rearLeftWheelTransform: {fileID: 1836215417}
   rearRightWheelTransform: {fileID: 1836215416}
+--- !u!114 &1836215427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836215415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d2c5d501595ca4e9fe1f5653ae0337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntoDeAcople: {fileID: 1558798674}
+  tagImplemento: Implement
+  teclaAcople: 101
+  teclaDesacople: 113
 --- !u!1 &1892547599
 GameObject:
   m_ObjectHideFlags: 0

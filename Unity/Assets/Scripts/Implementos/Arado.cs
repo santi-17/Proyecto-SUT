@@ -15,7 +15,7 @@ public class Arado : MonoBehaviour
     public LayerMask Suelo; // Capa del suelo para detectar colisiones
     public int materialAradoIndex = 1; // Índice del material del arado en el array de materiales
 
-    public float profundidadSurco = 0.03f; // Profundidad del arado en el terreno
+    public float profundidadSurco = 0.01f; // Profundidad del arado en el terreno
     public int size = 3; // Tamaño del área afectada por el arado
 
     bool aradoActivo = false; // Estado del arado
@@ -23,7 +23,7 @@ public class Arado : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        profundidadSurco = 0.03f;
+        profundidadSurco = 0.01f;
         //Terrain terrain = GetComponent<Terrain>();
         if (particulasTierra != null)
         {
@@ -85,7 +85,7 @@ public class Arado : MonoBehaviour
                 // Aquí puedes agregar la lógica para arar el terreno, como cambiar su textura o estado
                 Vector3 terrainPos = hit.point - terrain.transform.position;
                 TerrainData data = terrain.terrainData;
-                float profundidadEnMetros = 0.03f; // esto es lo que vos querés, por ejemplo 1 metro
+                float profundidadEnMetros = 0.01f; // esto es lo que vos querés, por ejemplo 1 metro
                 float alturaMaxima = data.size.y;
                 float profundidadSurco = profundidadEnMetros / alturaMaxima;
 

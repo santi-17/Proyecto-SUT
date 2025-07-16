@@ -342,6 +342,7 @@
 "Assets/Scripts/Implementos/Implemento.cs"
 "Assets/Scripts/Tractor/Acoplador.cs"
 "Assets/Scripts/Tractor/ImplementAttachment.cs"
+"Assets/Scripts/Tractor/ImplementoAcoplador.cs"
 "Assets/Scripts/Tractor/TractorControler.cs"
 "Assets/Scripts/Tractor/TractorSuspencion.cs"
 "Assets/Scripts/Tractor/Transmision.cs"
