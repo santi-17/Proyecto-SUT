@@ -8,21 +8,28 @@ public class Arado : MonoBehaviour
     public KeyCode activarArado = KeyCode.F; // Tecla para activar el arado
     [SerializeField] private Transform puntoRaycast;
     [SerializeField] private Terrain terrain;
+    [SerializeField] private ParticleSystem particulasTierra;
+    private ParticleSystem instanciaParticulas; // Instancia de las partículas de tierra
 
     public float distanciaDeteccion = 5f; // Distancia de detección del arado
     public LayerMask Suelo; // Capa del suelo para detectar colisiones
     public int materialAradoIndex = 1; // Índice del material del arado en el array de materiales
 
-    public float profundidadSurco = 0.05f; // Profundidad del arado en el terreno
-    public int size = 1; // Tamaño del área afectada por el arado
+    public float profundidadSurco = 0.03f; // Profundidad del arado en el terreno
+    public int size = 3; // Tamaño del área afectada por el arado
 
     bool aradoActivo = false; // Estado del arado
 
     // Start is called before the first frame update
     void Start()
     {
-        profundidadSurco = 0.05f;
+        profundidadSurco = 0.03f;
         //Terrain terrain = GetComponent<Terrain>();
+        if (particulasTierra != null)
+        {
+            instanciaParticulas = Instantiate(particulasTierra, transform);
+            instanciaParticulas.Stop();
+        }
         if (terrain != null)
         {
             TerrainData data = terrain.terrainData;
@@ -52,7 +59,19 @@ public class Arado : MonoBehaviour
             Debug.Log("Arado " + (aradoActivo ? "activado" : "desactivado"));
         }
 
+
         if(!aradoActivo) return; // Si el arado no está activo, salir del método
+
+        // Si el arado está activo, reproducir las partículas de tierra
+        if (aradoActivo && instanciaParticulas != null && !instanciaParticulas.isPlaying) // Verifica si las partículas no están reproduciéndose
+        {
+            instanciaParticulas.transform.position = puntoRaycast.position; // Asegurarse de que las partículas se posicionen correctamente
+            instanciaParticulas.Play(); // Reproducir las partículas de tierra
+        }
+        else if (!aradoActivo /*&& instanciaParticulas != null && instanciaParticulas.isPlaying*/) // Si el arado no está activo, detener las partículas
+        {
+            instanciaParticulas.Stop(); // Detener las partículas de tierra
+        }
 
         if (Physics.Raycast(puntoRaycast.position, Vector3.down, out RaycastHit hit, distanciaDeteccion))
         {
@@ -66,7 +85,7 @@ public class Arado : MonoBehaviour
                 // Aquí puedes agregar la lógica para arar el terreno, como cambiar su textura o estado
                 Vector3 terrainPos = hit.point - terrain.transform.position;
                 TerrainData data = terrain.terrainData;
-                float profundidadEnMetros = 0.05f; // esto es lo que vos querés, por ejemplo 1 metro
+                float profundidadEnMetros = 0.03f; // esto es lo que vos querés, por ejemplo 1 metro
                 float alturaMaxima = data.size.y;
                 float profundidadSurco = profundidadEnMetros / alturaMaxima;
 
