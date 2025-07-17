@@ -1,14 +1,34 @@
-using APIRESTUnityWeb.Controllers;
-using System;
+﻿using Microsoft.EntityFrameworkCore;
+using APIRESTUnityWeb.Data;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// ------------------------------------
+// Configuración de la conexión a PostgreSQL
+// ------------------------------------
+var connectionString = builder.Configuration.GetConnectionString("PostgreConnection");
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(connectionString));
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// ------------------------------------
+// Configuración de controladores y JSON en camelCase
+// ------------------------------------
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+    });
+
+// ------------------------------------
+// Swagger (documentación de la API)
+// ------------------------------------
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// ------------------------------------
+// Política CORS (para permitir requests desde frontend local u otros)
+// ------------------------------------
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -19,16 +39,13 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
-//{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-//}
+// ------------------------------------
+// Middleware
+// ------------------------------------
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseCors("AllowAll");
-
-//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
