@@ -106,3 +106,10 @@ Unity/ProjectSettings/TimelineSettings.asset
 *.bak
 *.old
 
+# Archivos de Visual Studio adicionales
+.vs/
+
+# Archivos internos de Unity (indexadores, caches)
+**/FileContentIndex/
+**/CopilotIndices/
+
