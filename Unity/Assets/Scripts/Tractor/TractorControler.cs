@@ -15,7 +15,8 @@ public class TractorControler : MonoBehaviour
     [SerializeField] private float motorForce = 3000f;
     [SerializeField] private Transmision transmision; // Assuming Transmision is a class that handles gear ratios and torque
     [SerializeField] private float breakForce = 3000f;
-    [SerializeField] private float maxSteerAngle = 30f;
+    [SerializeField] private float maxSteerAngle = 35f;
+    [SerializeField] public float steeringSpeed = 5f;
 
     //Rigidbody
     [SerializeField] private Rigidbody rb; // Reference to the Rigidbody component of the tractor
@@ -64,6 +65,7 @@ public class TractorControler : MonoBehaviour
         //float torque = verticalInput * motorForce * transmision.GetTorque();
         float rpm = rb.velocity.magnitude * 60f / (2f * Mathf.PI * frontLeftWheelCollider.radius); // Calculate RPM based on wheel speed
         float torque = torqueCurve.Evaluate(rpm / maxRPM) * transmision.GetTorque() * verticalInput * motorForce;
+        //float appliedForce = verticalInput * motorForce;
         frontLeftWheelCollider.motorTorque = torque;
         frontRightWheelCollider.motorTorque = torque;
         currentbreakForce = isBreaking ? breakForce : 0f;
@@ -80,7 +82,8 @@ public class TractorControler : MonoBehaviour
 
     private void HandleSteering()
     {
-        currentSteerAngle = maxSteerAngle * horizontalInput;
+        float  targetAngle = horizontalInput * maxSteerAngle;
+        currentSteerAngle = Mathf.Lerp(currentSteerAngle, targetAngle, Time.deltaTime * steeringSpeed);
         frontLeftWheelCollider.steerAngle = currentSteerAngle;
         frontRightWheelCollider.steerAngle = currentSteerAngle;
     }
