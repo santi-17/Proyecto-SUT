@@ -85,3 +85,10 @@ docker-compose.*
 *.bak
 *.old
 
+# Archivos de Visual Studio adicionales
+.vs/
+
+# Archivos internos de Unity (indexadores, caches)
+**/FileContentIndex/
+**/CopilotIndices/
+
